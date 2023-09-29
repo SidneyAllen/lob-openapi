@@ -207,24 +207,15 @@ post:
             address_state: "CA"
             address_zip: "94107"
             address_country: "US"
-          front: tmpl_a1234dddg
-          back: tmpl_a1234dddg
+          front: "<html><body>Hello</body></html>"
+          back: "<html><body>Goodbye</body></html>"
           size: "6x9"
           mail_type: usps_first_class
           merge_variables:
             name: Harry
           metadata:
             spiffy: "true"
-          send_date: "2017-11-01T00:00:00.000Z"
           use_type: marketing
-          qr_code:
-            position: "relative"
-            redirect_url: "https://www.lob.com"
-            width: "2.5"
-            top: "2.5"
-            right: "2.5"
-            pages: "front,back"
-          fsc: true
 
       application/x-www-form-urlencoded:
         schema:
@@ -255,24 +246,16 @@ post:
             address_state: "CA"
             address_zip: "94107"
             address_country: "US"
-          front: tmpl_c94e83ca2cd5121
-          back: tmpl_c94e83ca2cd5121
+          front: "<html><body>Hello</body></html>"
+          back: "<html><body>Goodbye</body></html>"
           size: "6x9"
           mail_type: usps_first_class
           merge_variables:
             name: Harry
           metadata:
             spiffy: "true"
-          send_date: "2017-11-01T00:00:00.000Z"
           use_type: marketing
-          qr_code:
-            position: "relative"
-            redirect_url: "https://www.lob.com"
-            width: "2.5"
-            bottom: "2.5"
-            right: "2.5"
-            pages: "back"
-          fsc: true
+
         encoding:
           to:
             style: deepObject
@@ -316,24 +299,15 @@ post:
             address_state: "CA"
             address_zip: "94107"
             address_country: "US"
-          front: tmpl_a1234dddg
-          back: tmpl_a1234dddg
+          front: "<html><body>Hello</body></html>"
+          back: "<html><body>Goodbye</body></html>"
           size: "6x9"
           mail_type: usps_first_class
           merge_variables:
             name: Harry
           metadata:
             spiffy: "true"
-          send_date: "2017-11-01T00:00:00.000Z"
           use_type: marketing
-          qr_code:
-            position: "relative"
-            redirect_url: "https://www.lob.com"
-            width: "2.5"
-            bottom: "2.5"
-            left: "2.5"
-            pages: "front"
-          fsc: true
 
   responses:
     "200":

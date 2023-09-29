@@ -18,7 +18,7 @@ idem-header:
 idem-query:
   in: query
 
-  name: idempotency_key
+  name: idempotency_key2
 
   required: false
 
@@ -30,4 +30,3 @@ idem-query:
   schema:
     type: string
     maxLength: 256
-    example: 026e7634-24d7-486c-a0bb-4a17fd0eebc5

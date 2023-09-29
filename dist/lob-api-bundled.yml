@@ -3399,7 +3399,7 @@ components:
         example: 026e7634-24d7-486c-a0bb-4a17fd0eebc5
     idem-query:
       in: query
-      name: idempotency_key
+      name: idempotency_key2
       required: false
       description: >
         A string of no longer than 256 characters that uniquely identifies this
@@ -3409,7 +3409,6 @@ components:
       schema:
         type: string
         maxLength: 256
-        example: 026e7634-24d7-486c-a0bb-4a17fd0eebc5
   schemas:
     date_filter:
       type: object
@@ -17647,7 +17646,6 @@ paths:
               metadata:
                 memo: rafting trip
               attachment: ./cool.pdf
-              send_date: '2017-11-01T00:00:00.000Z'
               use_type: operational
               mail_type: usps_first_class
               check_number: 10001
@@ -17686,7 +17684,6 @@ paths:
               metadata:
                 memo: rafting trip
               attachment: ./cool.pdf
-              send_date: '2017-11-01T00:00:00.000Z'
               mail_type: usps_first_class
               check_number: 10001
             encoding:
@@ -17737,7 +17734,6 @@ paths:
               metadata:
                 memo: rafting trip
               attachment: ./cool.pdf
-              send_date: '2017-11-01T00:00:00.000Z'
               use_type: operational
               mail_type: usps_first_class
               check_number: 10001
@@ -19711,18 +19707,9 @@ paths:
                 name: Harry
               metadata:
                 spiffy: 'true'
-              send_date: '2017-11-01T00:00:00.000Z'
               extra_service: registered
               custom_envelope: null
               use_type: marketing
-              qr_code:
-                position: relative
-                redirect_url: https://www.lob.com
-                width: '2'
-                top: '2'
-                right: '2'
-                pages: 1-2,4-5
-              fsc: true
           application/x-www-form-urlencoded:
             schema:
               $ref: '#/components/schemas/letter_editable'
@@ -19762,18 +19749,9 @@ paths:
                 name: Harry
               metadata:
                 spiffy: 'true'
-              send_date: '2017-11-01T00:00:00.000Z'
               extra_service: registered
               custom_envelope: null
               use_type: marketing
-              qr_code:
-                position: relative
-                redirect_url: https://www.lob.com
-                width: '2'
-                bottom: '2'
-                right: '2'
-                pages: 1,4
-              fsc: true
             encoding:
               to:
                 style: deepObject
@@ -19826,18 +19804,9 @@ paths:
                 name: Harry
               metadata:
                 spiffy: 'true'
-              send_date: '2017-11-01T00:00:00.000Z'
               extra_service: registered
               custom_envelope: null
               use_type: marketing
-              qr_code:
-                position: relative
-                redirect_url: https://www.lob.com
-                width: '2'
-                bottom: '2'
-                left: '2'
-                pages: 1,3-5
-              fsc: true
       responses:
         '200':
           $ref: '#/components/responses/post_letter'
@@ -20828,24 +20797,15 @@ paths:
                 address_state: CA
                 address_zip: '94107'
                 address_country: US
-              front: tmpl_a1234dddg
-              back: tmpl_a1234dddg
+              front: <html><body>Hello</body></html>
+              back: <html><body>Goodbye</body></html>
               size: 6x9
               mail_type: usps_first_class
               merge_variables:
                 name: Harry
               metadata:
                 spiffy: 'true'
-              send_date: '2017-11-01T00:00:00.000Z'
               use_type: marketing
-              qr_code:
-                position: relative
-                redirect_url: https://www.lob.com
-                width: '2.5'
-                top: '2.5'
-                right: '2.5'
-                pages: front,back
-              fsc: true
           application/x-www-form-urlencoded:
             schema:
               $ref: '#/components/schemas/postcard_editable'
@@ -20875,24 +20835,15 @@ paths:
                 address_state: CA
                 address_zip: '94107'
                 address_country: US
-              front: tmpl_c94e83ca2cd5121
-              back: tmpl_c94e83ca2cd5121
+              front: <html><body>Hello</body></html>
+              back: <html><body>Goodbye</body></html>
               size: 6x9
               mail_type: usps_first_class
               merge_variables:
                 name: Harry
               metadata:
                 spiffy: 'true'
-              send_date: '2017-11-01T00:00:00.000Z'
               use_type: marketing
-              qr_code:
-                position: relative
-                redirect_url: https://www.lob.com
-                width: '2.5'
-                bottom: '2.5'
-                right: '2.5'
-                pages: back
-              fsc: true
             encoding:
               to:
                 style: deepObject
@@ -20935,24 +20886,15 @@ paths:
                 address_state: CA
                 address_zip: '94107'
                 address_country: US
-              front: tmpl_a1234dddg
-              back: tmpl_a1234dddg
+              front: <html><body>Hello</body></html>
+              back: <html><body>Goodbye</body></html>
               size: 6x9
               mail_type: usps_first_class
               merge_variables:
                 name: Harry
               metadata:
                 spiffy: 'true'
-              send_date: '2017-11-01T00:00:00.000Z'
               use_type: marketing
-              qr_code:
-                position: relative
-                redirect_url: https://www.lob.com
-                width: '2.5'
-                bottom: '2.5'
-                left: '2.5'
-                pages: front
-              fsc: true
       responses:
         '200':
           $ref: '#/components/responses/post_postcard'
@@ -22820,16 +22762,7 @@ paths:
               mail_type: usps_standard
               merge_variables:
                 name: Harry
-              send_date: '2017-11-01T00:00:00.000Z'
               use_type: marketing
-              qr_code:
-                position: relative
-                redirect_url: https://www.lob.com
-                width: '2.5'
-                top: '2.5'
-                right: '2.5'
-                pages: inside,outside
-              fsc: true
           application/x-www-form-urlencoded:
             schema:
               $ref: '#/components/schemas/self_mailer_editable'
@@ -22845,16 +22778,7 @@ paths:
               mail_type: usps_standard
               merge_variables:
                 name: Harry
-              send_date: '2017-11-01T00:00:00.000Z'
               use_type: marketing
-              qr_code:
-                position: relative
-                redirect_url: https://www.lob.com
-                width: '2.5'
-                top: '2.5'
-                right: '2.5'
-                pages: inside,outside
-              fsc: true
             encoding:
               merge_variables:
                 style: deepObject
@@ -22877,16 +22801,7 @@ paths:
               mail_type: usps_standard
               merge_variables:
                 name: Harry
-              send_date: '2017-11-01T00:00:00.000Z'
               use_type: marketing
-              qr_code:
-                position: relative
-                redirect_url: https://www.lob.com
-                width: '2.5'
-                top: '2.5'
-                right: '2.5'
-                pages: inside,outside
-              fsc: true
       responses:
         '200':
           $ref: '#/components/responses/post_self_mailer'

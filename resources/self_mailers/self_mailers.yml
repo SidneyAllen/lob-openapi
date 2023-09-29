@@ -191,16 +191,7 @@ post:
           mail_type: usps_standard
           merge_variables:
             name: Harry
-          send_date: "2017-11-01T00:00:00.000Z"
           use_type: marketing
-          qr_code:
-            position: "relative"
-            redirect_url: "https://www.lob.com"
-            width: "2.5"
-            top: "2.5"
-            right: "2.5"
-            pages: "inside,outside"
-          fsc: true
 
       application/x-www-form-urlencoded:
         schema:
@@ -217,16 +208,8 @@ post:
           mail_type: usps_standard
           merge_variables:
             name: Harry
-          send_date: "2017-11-01T00:00:00.000Z"
           use_type: marketing
-          qr_code:
-            position: "relative"
-            redirect_url: "https://www.lob.com"
-            width: "2.5"
-            top: "2.5"
-            right: "2.5"
-            pages: "inside,outside"
-          fsc: true
+
         encoding:
           merge_variables:
             style: deepObject
@@ -250,16 +233,7 @@ post:
           mail_type: usps_standard
           merge_variables:
             name: Harry
-          send_date: "2017-11-01T00:00:00.000Z"
           use_type: marketing
-          qr_code:
-            position: "relative"
-            redirect_url: "https://www.lob.com"
-            width: "2.5"
-            top: "2.5"
-            right: "2.5"
-            pages: "inside,outside"
-          fsc: true
 
   responses:
     "200":
