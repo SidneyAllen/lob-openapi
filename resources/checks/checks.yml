@@ -200,7 +200,6 @@ post:
           metadata:
             memo: rafting trip
           attachment: "./cool.pdf"
-          send_date: "2017-11-01T00:00:00.000Z"
           use_type: operational
           mail_type: usps_first_class
           check_number: 10001
@@ -239,7 +238,6 @@ post:
           metadata:
             memo: rafting trip
           attachment: "./cool.pdf"
-          send_date: "2017-11-01T00:00:00.000Z"
           mail_type: usps_first_class
           check_number: 10001
         encoding:
@@ -290,7 +288,6 @@ post:
           metadata:
             memo: rafting trip
           attachment: "./cool.pdf"
-          send_date: "2017-11-01T00:00:00.000Z"
           use_type: operational
           mail_type: usps_first_class
           check_number: 10001
